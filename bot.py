@@ -276,7 +276,7 @@ async def init_db():
             ("Филантроп Хаоса", "Позволил дому быть немного неидеальным, чтобы снять стресс с партнёра", "🧘‍♀️", 5, "Мудрец Баланса", "secret", 1),
         ]
 
-        for name, desc, icon, points, title, ach_type, is_hidden in achievements_
+        for name, desc, icon, points, title, ach_type, is_hidden in achievements:
             await db.execute('''
                 INSERT OR IGNORE INTO achievements (name, description, icon, points, title, type, is_hidden)
                 VALUES (?, ?, ?, ?, ?, ?, ?)

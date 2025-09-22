@@ -11,7 +11,7 @@ from apscheduler.triggers.cron import CronTrigger
 from calendar import monthcalendar, month_name
 
 # ============ НАСТРОЙКИ ============
-API_TOKEN = 8278829733:AAFJGwqcurBtrGLqq3szbFcFd9i09LHgHag
+API_TOKEN = '8278829733:AAFJGwqcurBtrGLqq3szbFcFd9i09LHgHag'
 ADMINS = [434755668, 819582279]  # Замени на ваши user_id
 
 bot = Bot(token=API_TOKEN)

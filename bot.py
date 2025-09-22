@@ -1515,6 +1515,7 @@ async def send_weekly_report():
 async def main():
     await init_db()
 
+    # Запускаем расписание
     scheduler = AsyncIOScheduler()
     scheduler.add_job(send_daily_reminders, CronTrigger(hour=19, minute=0))
     scheduler.add_job(send_weekly_report, CronTrigger(day_of_week='sun', hour=20, minute=0))
